@@ -5,7 +5,7 @@ keys_should_be = {"poster_name", "poster_avatar", "pic", "content", "views_count
 
 def test_feed_status():
     response = app.test_client().get('/', follow_redirects=True)
-    assert response.status_code == 200, "Статус-код запроса кандидатов не ок"
+    assert response.status_code == 200, "Статус-код запроса ленты не ок"
 
 
 def test_posts_json():

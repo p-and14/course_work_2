@@ -422,7 +422,8 @@ textarea {
 	box-shadow: none;
 	opacity: 0.2;
 	-webkit-transition: all 0.5s linear;
-	transition: all 0.5s linear
+	transition: all 0.5s linear;
+	cursor: pointer
 }
 
 .item__bookmark-btn.active,
