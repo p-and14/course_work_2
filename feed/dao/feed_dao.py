@@ -8,8 +8,8 @@ class FeedDAO:
 
     def load_data(self):
         """
-
-        :return:
+        Загружает посты из файла
+        :return: Список постов
         """
         with open(self.path, "r", encoding="utf-8") as file:
             posts = json.load(file)
@@ -18,7 +18,7 @@ class FeedDAO:
 
     def get_posts_all(self):
         """
-
-        :return:
+        Получает список всех постов
+        :return: Список всех постов
         """
         return self.load_data()

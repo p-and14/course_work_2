@@ -18,7 +18,7 @@ def get_comments_all(path):
     :param path:
     :return:
     """
-    with open(path) as file:
+    with open(path, "r", encoding="utf-8") as file:
         comments = json.load(file)
 
         return comments

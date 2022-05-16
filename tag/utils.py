@@ -3,6 +3,11 @@ from config import POSTS_PATH
 
 
 def get_posts_by_tag(tag_name):
+    """
+    Поиск постов по тэгу
+    :param tag_name: Тэг-слово
+    :return: Список постов
+    """
     posts = get_posts_all(POSTS_PATH)
     posts_with_tag = []
     tag = f"#{tag_name}"

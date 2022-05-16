@@ -4,9 +4,9 @@ from config import POSTS_PATH
 
 def get_posts_by_user(user_name):
     """
-
-    :param user_name:
-    :return:
+    Поиск постов определённого пользователя
+    :param user_name: Имя пользователя
+    :return: Список постов
     """
     posts = get_posts_all(POSTS_PATH)
     user_posts = []

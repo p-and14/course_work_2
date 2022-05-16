@@ -4,9 +4,9 @@ from config import POSTS_PATH
 
 def search_for_posts(query):
     """
-
-    :param query:
-    :return:
+    Поиск постов по ключевому слову
+    :param query: Ключевое слово для поиска
+    :return: Список постов
     """
     posts = get_posts_all(POSTS_PATH)
     posts_with_query = []
